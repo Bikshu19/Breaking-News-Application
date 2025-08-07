@@ -6,7 +6,7 @@ export default function NewsSection() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:3000/news') // Update this URL to match your actual backend
+    fetch('https://baby-backend-e499.onrender.com') // Update this URL to match your actual backend
       .then((res) => res.json())
       .then((data) => {
         if (data.status === 'success') {
